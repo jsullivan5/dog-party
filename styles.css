@@ -1,0 +1,178 @@
+body {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/*=======================================
+>>>>>>>>   header   <<<<<<<<
+========================================*/
+
+.clear-fix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+header {
+  background-color: #70DEE3;
+  border-top: 2px solid gray;
+  height: 50px;
+}
+
+.logo {
+  width: 35px;
+  margin: 7px 0 0 15px;
+}
+
+nav {
+  float: right;
+  margin: -5px 20px 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav a {
+color: white;
+  text-decoration: none;
+}
+
+/*=======================================
+>>>>>>>>  Hero Banner  <<<<<<<<
+========================================*/
+
+.hero {
+  background-image: url(images/park.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.dog-img {
+  border-radius: 50%;
+  border: 4px solid #3F8DA7;
+  width: 300px;
+  margin: 0 auto 10px;
+}
+
+#header-dog {
+  width: 300px;
+}
+
+.button-link {
+  display: block;
+  background-color: white;
+  color: #3F8DA7;
+  border: 4px solid #3F8DA7;
+  width: 140px;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+}
+
+.hero .button-link {
+  margin-bottom: 20px;
+}
+
+/*=======================================
+>>>>>>>>  Main Content  <<<<<<<<
+========================================*/
+.dog-img {
+  width: 200px;
+}
+
+main {
+  width: 100%;
+  padding: 1%;
+}
+
+.content-col {
+  float: left;
+  width: 30%;
+  min-width: 100px;
+  padding: 15px;
+  text-align: center;
+  margin: 0;
+}
+
+/*=======================================
+>>>>>>>>  Footer  <<<<<<<<
+========================================*/
+
+footer {
+  background-color: #3F8DA7;
+  margin: 20px 0 0 0;
+  padding: 15px;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  margin: 0 0 20px;
+}
+
+footer a {
+  margin: 0 25px;
+  text-decoration: none;
+}
+
+.git-link {
+  display: block;
+  color: white;
+  margin: 20px 0 0 0;
+  text-decoration: underline;
+}
+
+/*=======================================
+>>>>>>>>  Responsive  <<<<<<<<
+========================================*/
+
+@media screen and (max-width: 900px) {
+    .content-col {
+    width: 45%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content-col {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header{
+    height: auto;
+  }
+
+  nav {
+    margin: auto;
+    text-align: center;
+  }
+  nav ul {
+    padding: 0;
+  }
+
+  .logo {
+    display: block;
+    margin: 10px auto 0;
+  }
+
+  nav {
+    float: none;
+  }
+
+  nav a {
+    display: block;
+    margin: auto;
+  }
+}
